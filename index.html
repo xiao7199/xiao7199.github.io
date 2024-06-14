@@ -48,11 +48,24 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr>
+            <tr onmouseout="intrinsic_latent_stop()" onmouseover="intrinsic_latent_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/latent_intrinsic_160.png'>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='intrinsic_latent_img'>
+                    <img src='images/latent_intrinsic.png' width="220"></div>
+                  <img src='images/latent_intrinsic.png' width="220">
+                </div>
+                <script type="text/javascript">
+                  function intrinsic_latent_start() {
+                    document.getElementById('intrinsic_latent_img').style.opacity = "1";
+                  }
+
+                  function intrinsic_latent_stop() {
+                    document.getElementById('intrinsic_latent_img').style.opacity = "0";
+                  }
+                  embed_stop()
+                </script>
+              </td>              <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2405.21074">
                   <span class="papertitle">Latent Intrinsics Emerge from Training to Relight</span>
                 </a>
