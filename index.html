@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Xiao Zhang</title>
+    <title>Xiao Zhang Computer Vision</title>
 
     <meta name="author" content="Xiao Zhang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,14 +21,15 @@
                 <p class="name" style="text-align: center;">
                     Xiao Zhang
                 </p>
-                <p>I'm a final-year CS Ph.D student at the University of Chicago, where I primarily work with <a href="https://people.cs.uchicago.edu/~mmaire/">Michael Maire</a> on computer vision.
-                  During my Ph.D., I focused on unsupervised representation learning using generative models. My research aims to develop scalable algorithms for representation learning applicable to real-world scenarios and complex image/video generation.
+                <p>I'm a final-year CS Ph.D student at the <a href="https://www.uchicago.edu/en/">University of Chicago</a>, where I primarily work with <a href="https://people.cs.uchicago.edu/~mmaire/">Michael Maire</a> on computer vision.
+                  During my Ph.D., I focused on unsupervised representation learning and generative models. My research aims to develop scalable algorithms for representation learning applicable to real-world scenarios and complex image/video generation.
                 </p>
                 <p>
                   Before starting my Ph.D., I worked as a graduate research assistant with <a href="https://www.cis.upenn.edu/~jshi/">Jianbo Shi</a>.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:zhang7@uchicago.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="https://drive.google.com/file/d/15YNhYk5ekvgjVX_XeLUyd375OdHDNeQ_/view">Resume</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=Rd76O7QAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
                   <a href="https://twitter.com/xiaozha55937919">Twitter</a> &nbsp;/&nbsp;
                   <a href="https://github.com/xiao7199">Github</a>
@@ -48,23 +49,9 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr onmouseout="intrinsic_latent_stop()" onmouseover="intrinsic_latent_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='intrinsic_latent_img'>
-                    <img src='images/latent_intrinsic.png' width="220"></div>
-                  <img src='images/latent_intrinsic.png' width="220">
-                </div>
-                <script type="text/javascript">
-                  function intrinsic_latent_start() {
-                    document.getElementById('intrinsic_latent_img').style.opacity = "1";
-                  }
-
-                  function intrinsic_latent_stop() {
-                    document.getElementById('intrinsic_latent_img').style.opacity = "0";
-                  }
-                  embed_stop()
-                </script>
+                <img src='images/latent_intrinsic.png', width="220">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2405.21074">
@@ -76,16 +63,16 @@
                 <em>In Submission</em>, 2024
                 <br>
                 <p></p>
-                <p>Learn latent intrinsic representation from relighting pair.</p>
+                <p> A relighting method that is entirely data-driven, where intrinsics and lighting are each represented as latent variables. Our approach produces SOTA relightings of real scenes. We show that albedo can be recovered from our latent intrinsics without using any example albedos, and that the albedos recovered are competitive with SOTA methods.</p>
               </td>
             </tr>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/Shelhamer2015.jpg'>
+                <img src='images/decay_shortcut.png', width="220">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2405.21074">
+                <a href="https://arxiv.org/abs/2404.10947">
                   <span class="papertitle">Residual Connections Harm Self-Supervised Abstract Feature Learning</span>
                 </a>
                 <br>
@@ -94,16 +81,16 @@
                 <em>In Submission</em>, 2024
                 <br>
                 <p></p>
-                <p>By framing white balance as a chroma localization task we can discriminatively learn a color constancy model that beats the state-of-the-art by 40%.</p>
+                <p> We show that incorporating a weighting factor to reduce the strength of identity shortcuts within residual networks significantly enhances semantic feature learning in the masked autoencoding (MAE) framework. This modification promotes low-rank representations at the bottleneck layers and increases the MAE linear probing accuracy on ImageNet from 67.8% to 72.8%..</p>
               </td>
             </tr>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/Shelhamer2015.jpg'>
+                <img src='images/deciphering_what_where.png', width = "220">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2405.21074">
+                <a href="https://arxiv.org/abs/2312.06716">
                   <span class="papertitle">Deciphering 'What' and 'Where' Visual Pathways from Spectral Clustering of Layer-Distributed Neural Representations</span>
                 </a>
                 <br>
@@ -111,17 +98,19 @@
                 <br>
                 <em>CVPR</em>, 2024 <font color="red"><strong>(Highlight)</strong></font>
                 <br>
+                <a href="https://github.com/xiao7199/layer_distributed_spectral_clustering">Code</a>
+                <br>
                 <p></p>
-                <p>By framing white balance as a chroma localization task we can discriminatively learn a color constancy model that beats the state-of-the-art by 40%.</p>
+                <p>We introduce a method for examining the grouping information embedded in a neural network's activations, allowing for the extraction of spatial layout and semantic segmentation from the behavior of large pre-trained vision models. Our approach provides tools for a comprehensive analysis of the model's behavior across datasets. In the attention layers, we demonstrate that key-query similarity encodes scene spatial layout, while value vector similarity encodes object identity. </p>
               </td>
             </tr>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/Shelhamer2015.jpg'>
+                <img src='images/gan_representation.png', width="220">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2405.21074">
+                <a href="https://arxiv.org/abs/2310.00357">
                   <span class="papertitle">Structural Adversarial Objectives for Self-Supervised Representation Learning</span>
                 </a>
                 <br>
@@ -129,34 +118,38 @@
                 <br>
                 <em>In Submission</em>, 2024
                 <br>
+                <a href="https://github.com/xiao7199/structural-adversarial-objectives">Code</a>
+                <br>
                 <p></p>
-                <p>By framing white balance as a chroma localization task we can discriminatively learn a color constancy model that beats the state-of-the-art by 40%.</p>
+                <p>Within the framework of GANs, we propose objectives that task the discriminator for self-supervised representation learning via additional structural modeling responsibilities.  Operating as a feature learner within the GAN framework frees our self-supervised system from the reliance on hand-crafted data augmentation schemes. </p>
               </td>
             </tr>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/Shelhamer2015.jpg'>
+                <img src='images/hierarchical_grouping.png', width="220">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2405.21074">
-                  <span class="papertitle">Self-supervised visual representation learning from hierarchical grouping</span>
+                <a href="https://arxiv.org/abs/2012.03044">
+                  <span class="papertitle">Self-supervised Visual Representation Learning From Hierarchical Grouping</span>
                 </a>
                 <br>
                 <strong>Xiao Zhang</strong>, <a href="https://people.cs.uchicago.edu/~mmaire/">Michael Maire</a>
                 <br>
                 <em>NeurIPS</em>, 2020 <font color="red"><strong>(Spotlight)</strong></font>
                 <br>
+                <a href="https://drive.google.com/file/d/1Hns74JwRc7zBiIT-ZM8EZ8zRnOGMgw4F/view?usp=share_link">Code</a>
+                <br>
                 <p></p>
-                <p>By framing white balance as a chroma localization task we can discriminatively learn a color constancy model that beats the state-of-the-art by 40%.</p>
+                <p>We develop a framework for visual representation learning using a basic grouping capability. This grouping is implemented through a contour detector that divides an image into regions, which are then merged into a tree hierarchy. We train a self-supervised feature learning system by generating per-pixel embeddings that respect the hierarchical relationships between regions. </p>
               </td>
             </tr>
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/Shelhamer2015.jpg'>
+                <img src='images/ndiv.png', width="220">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2405.21074">
+                <a href="https://arxiv.org/abs/1904.03608">
                   <span class="papertitle">Normalized diversification</span>
                 </a>
                 <br>
@@ -164,8 +157,10 @@
                 <br>
                 <em>CVPR</em>, 2019
                 <br>
+                <a href="https://github.com/B1ueber2y/NDiv">Code</a>
+                <br>
                 <p></p>
-                <p>By framing white balance as a chroma localization task we can discriminatively learn a color constancy model that beats the state-of-the-art by 40%.</p>
+                <p> We introduce the concept of normalized diversity which force the model to preserve the normalized pairwise distance between the sparse samples from a latent parametric distribution and their corresponding high-dimensional outputs. The normalized diversification aims to unfold the manifold of unknown topology and non-uniform distribution, which leads to safe interpolation between valid latent variables.</p>
               </td>
             </tr>
 
@@ -178,7 +173,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Webpage template is borrowed from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
+                  Template is borrowed from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
                 </p>
               </td>
             </tr>
